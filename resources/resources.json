@@ -687,7 +687,7 @@
           "Type": "Integer",
           "RangeEnumeration": "",
           "Units": "",
-          "Description": "Index inActions array of the current action"
+          "Description": "Index in Actions array of the current action"
         }
       },
       {
