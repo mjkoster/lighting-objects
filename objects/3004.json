@@ -15,7 +15,7 @@
             "Name": "Current Color Temp",
             "Operations": "RW",
             "MultipleInstances": "Single",
-            "Mandatory": "Optional",
+            "Mandatory": "Mandatory",
             "Type": "Float",
             "RangeEnumeration": "",
             "Units": "ucum:k",

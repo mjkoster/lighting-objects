@@ -1,0 +1,54 @@
+
+{
+  "LWM2M" : {
+    "Object" : {
+      "ObjectID": 3010,
+      "ObjectURN": "urn:oma:lwm2m:ext:3010",
+      "Name": "Link Group",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Description": "Link Group for collective interaction with local objects",
+      "Resources": [
+        {
+          "Item": {
+            "ResourceID": 5054,
+            "Name": "Instance List",
+            "Operations": "CRWD",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Objlink",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Array of links to local object instances"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5079,
+            "Name": "Instance group",
+            "Operations": "RWE",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Objlink",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Used to interact with all instances collectively"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5750,
+            "Name": "Application Type",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The application type or use context"
+          }
+        }
+      ]
+    }
+  }
+}

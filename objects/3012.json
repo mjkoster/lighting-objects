@@ -2,76 +2,76 @@
 {
   "LWM2M" : {
     "Object" : {
-      "ObjectID": 3008,
-      "ObjectURN": "urn:oma:lwm2m:ext:3008",
-      "Name": "Peer",
+      "ObjectID": 3012,
+      "ObjectURN": "urn:oma:lwm2m:ext:3012",
+      "Name": "Scene Control",
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
-      "Description": "Network Peer Object",
+      "Description": "Scene Control Object",
       "Resources": [
         {
           "Item": {
-            "ResourceID": 5047,
-            "Name": "Network Address",
-            "Operations": "RW",
+            "ResourceID": 5075,
+            "Name": "Current Scene",
+            "Operations": "R",
             "MultipleInstances": "Single",
             "Mandatory": "Mandatory",
-            "Type": "String",
+            "Type": "Objlink",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "RFC3986 URI with shceme and authority"
+            "Description": "The most recently recalled Scene"
           }
         },
         {
           "Item": {
-            "ResourceID": 5048,
-            "Name": "Short ID",
-            "Operations": "RW",
+            "ResourceID": 5076,
+            "Name": "Recall Scene",
+            "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Mandatory",
-            "Type": "Integer",
+            "Type": "Objlink",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "Short ID for ACL reference"
+            "Description": "Recall the indicated Scene"
           }
         },
         {
           "Item": {
-            "ResourceID": 5049,
-            "Name": "Public Key",
+            "ResourceID": 5002,
+            "Name": "Transition Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Time to reach the new state or value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5073,
+            "Name": "Valid",
             "Operations": "R",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
-            "Type": "String",
+            "Type": "Boolean",
             "RangeEnumeration": "",
-            "Units": "",
-            "Description": "Local Public Key used in Handshake"
+            "Units": "ucum:%",
+            "Description": "Indicates that the value obtained is the most current value, e.g. a scene state matches the state of all resources in the scene"
           }
         },
         {
           "Item": {
-            "ResourceID": 5050,
-            "Name": "Private Key",
+            "ResourceID": 5077,
+            "Name": "Update Scene",
             "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
-            "Type": "Opaque",
+            "Type": "Objlink",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "Local Private Key used in verification and signing"
-          }
-        },
-        {
-          "Item": {
-            "ResourceID": 5051,
-            "Name": "External Public Key",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "String",
-            "RangeEnumeration": "",
-            "Units": "",
-            "Description": "Remote Public Key used in Handshake"
+            "Description": "Update the current scene or the linked scene"
           }
         },
         {

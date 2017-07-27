@@ -1,0 +1,80 @@
+
+{
+  "LWM2M" : {
+    "Object" : {
+      "ObjectID": 3011,
+      "ObjectURN": "urn:oma:lwm2m:ext:3011",
+      "Name": "Scene",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Description": "Scene Definition Object",
+      "Resources": [
+        {
+          "Item": {
+            "ResourceID": 5072,
+            "Name": "Name",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Name of a scene or other item in a collection"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5002,
+            "Name": "Transition Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Time to reach the new state or value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5054,
+            "Name": "Instance List",
+            "Operations": "CRWD",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Objlink",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Array of links to local object instances"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5074,
+            "Name": "Scene Configurtion",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Mandatory",
+            "Type": "String",
+            "RangeEnumeration": "SenML",
+            "Units": "",
+            "Description": "A SenML template for updating object instances as scene members"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5750,
+            "Name": "Application Type",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The application type or use context"
+          }
+        }
+      ]
+    }
+  }
+}
