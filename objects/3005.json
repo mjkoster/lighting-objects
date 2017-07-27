@@ -2,24 +2,50 @@
 {
   "LWM2M" : {
     "Object" : {
-      "ObjectID": 3004,
-      "ObjectURN": "urn:oma:lwm2m:ext:3004",
-      "Name": "Color Temperature",
+      "ObjectID": 3005,
+      "ObjectURN": "urn:oma:lwm2m:ext:3005",
+      "Name": "Color RGB",
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
-      "Description": "Color control using Color Temperature",
+      "Description": "Color control using the RGB Color Space",
       "Resources": [
         {
           "Item": {
-            "ResourceID": 5031,
-            "Name": "Current Color Temp",
+            "ResourceID": 5060,
+            "Name": "Current Red",
             "Operations": "RW",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
-            "Units": "ucum:k",
-            "Description": "Current value of Color Temperature in degrees K for CT light control mode"
+            "Units": "",
+            "Description": "Current Red Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5061,
+            "Name": "Current Green",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Current Green Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5062,
+            "Name": "Current Blue",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Current Blue Setting"
           }
         },
         {
@@ -89,41 +115,119 @@
         },
         {
           "Item": {
-            "ResourceID": 5059,
-            "Name": "Change Color Temperature",
-            "Operations": "E",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Float",
-            "RangeEnumeration": "",
-            "Units": "ucum:degK",
-            "Description": "Change Color Temperature Setting"
-          }
-        },
-        {
-          "Item": {
-            "ResourceID": 5036,
-            "Name": "Move Color Temp",
+            "ResourceID": 5063,
+            "Name": "Change Red",
             "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "Start Move Color Temp Operation at the given rate"
+            "Description": "Change Red Setting"
           }
         },
         {
           "Item": {
-            "ResourceID": 5041,
-            "Name": "Step Color Temp",
+            "ResourceID": 5064,
+            "Name": "Change Green",
             "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "Start Step Color Temp Operation at the given rate"
+            "Description": "Change Green Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5065,
+            "Name": "Change Blue",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Change Blue Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5066,
+            "Name": "Move Red",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%/ucum:sec",
+            "Description": "Move Red settig per second Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5067,
+            "Name": "Move Green",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%/ucum:sec",
+            "Description": "Move Green settig per second Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5068,
+            "Name": "Move Blue",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%/ucum:sec",
+            "Description": "Move Blue settig per second Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5069,
+            "Name": "Step Red",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Step Red setting relative to current value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5070,
+            "Name": "Step Green",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Step Green setting relative to current value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5071,
+            "Name": "Step Blue",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Step Blue setting relative to current value"
           }
         },
         {
