@@ -19,8 +19,6 @@
         <Units></Units>
         <Description>The state of an OnOff control element, e.g. a user control</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5012</ResourceID>
         <Name>Level Control</Name>
@@ -32,8 +30,6 @@
         <Units>ucum:%</Units>
         <Description>The setting of a level control element, e.g. a user control</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5013</ResourceID>
         <Name>Momentary Switch</Name>
@@ -45,8 +41,6 @@
         <Units></Units>
         <Description>The state of a momentary switch like a user push button</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5014</ResourceID>
         <Name>Up or Increment</Name>
@@ -58,8 +52,6 @@
         <Units></Units>
         <Description>The state of a momentary switch that indicates an expected increase in value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5015</ResourceID>
         <Name>Down or Decrement</Name>
@@ -71,8 +63,6 @@
         <Units></Units>
         <Description>The state of a momentary switch that indicates an expected decrease in value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

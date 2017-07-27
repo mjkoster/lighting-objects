@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Color control using the CIE XY Color Space",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5029,
             "Name": "Current X",
             "Operations": "RW",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Current value of X setting for XY light control mode"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5030,
             "Name": "Current Y",
             "Operations": "RW",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Current value of Y setting for XY light control mode"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5052,
             "Name": "Actions",
             "Operations": "CRWD",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "JSON",
             "Units": "",
             "Description": "Reusable resource for current collection of actions"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5053,
             "Name": "Current Action",
             "Operations": "R",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Index in Actions array of the current action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5002,
             "Name": "Transition Time",
             "Operations": "RW",
@@ -72,10 +64,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time to reach the new state or value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5003,
             "Name": "Remaining Time",
             "Operations": "RW",
@@ -85,10 +75,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time left to execute teh current Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5004,
             "Name": "Stop",
             "Operations": "E",
@@ -98,10 +86,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Stop the currently executing Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5057,
             "Name": "Change X",
             "Operations": "E",
@@ -111,10 +97,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Change X Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5058,
             "Name": "Change Y",
             "Operations": "E",
@@ -124,10 +108,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Change Y Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5034,
             "Name": "Move X",
             "Operations": "E",
@@ -137,10 +119,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Start Move X Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5035,
             "Name": "Move Y",
             "Operations": "E",
@@ -150,10 +130,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Start Move Y Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5039,
             "Name": "Step X",
             "Operations": "E",
@@ -163,10 +141,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Start Step X Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5040,
             "Name": "Step Y",
             "Operations": "E",
@@ -176,10 +152,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Start Step Y Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5007,
             "Name": "Step Time",
             "Operations": "RW",
@@ -189,10 +163,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:s",
             "Description": "Time to move Step amount"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -203,8 +175,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

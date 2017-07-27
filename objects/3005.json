@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Color control using the RGB Color Space",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5060,
             "Name": "Current Red",
             "Operations": "RW",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Current Red Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5061,
             "Name": "Current Green",
             "Operations": "RW",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Current Green Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5062,
             "Name": "Current Blue",
             "Operations": "RW",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Current Blue Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5052,
             "Name": "Actions",
             "Operations": "CRWD",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "JSON",
             "Units": "",
             "Description": "Reusable resource for current collection of actions"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5053,
             "Name": "Current Action",
             "Operations": "R",
@@ -72,10 +64,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Index in Actions array of the current action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5002,
             "Name": "Transition Time",
             "Operations": "RW",
@@ -85,10 +75,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time to reach the new state or value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5003,
             "Name": "Remaining Time",
             "Operations": "RW",
@@ -98,10 +86,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time left to execute teh current Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5004,
             "Name": "Stop",
             "Operations": "E",
@@ -111,10 +97,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Stop the currently executing Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5063,
             "Name": "Change Red",
             "Operations": "E",
@@ -124,10 +108,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Change Red Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5064,
             "Name": "Change Green",
             "Operations": "E",
@@ -137,10 +119,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Change Green Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5065,
             "Name": "Change Blue",
             "Operations": "E",
@@ -150,10 +130,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Change Blue Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5066,
             "Name": "Move Red",
             "Operations": "E",
@@ -163,10 +141,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%/ucum:sec",
             "Description": "Move Red settig per second Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5067,
             "Name": "Move Green",
             "Operations": "E",
@@ -176,10 +152,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%/ucum:sec",
             "Description": "Move Green settig per second Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5068,
             "Name": "Move Blue",
             "Operations": "E",
@@ -189,10 +163,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%/ucum:sec",
             "Description": "Move Blue settig per second Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5069,
             "Name": "Step Red",
             "Operations": "E",
@@ -202,10 +174,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Step Red setting relative to current value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5070,
             "Name": "Step Green",
             "Operations": "E",
@@ -215,10 +185,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Step Green setting relative to current value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5071,
             "Name": "Step Blue",
             "Operations": "E",
@@ -228,10 +196,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Step Blue setting relative to current value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5007,
             "Name": "Step Time",
             "Operations": "RW",
@@ -241,10 +207,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:s",
             "Description": "Time to move Step amount"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -255,8 +219,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

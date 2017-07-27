@@ -19,8 +19,6 @@
         <Units></Units>
         <Description>Current Red Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5061</ResourceID>
         <Name>Current Green</Name>
@@ -32,8 +30,6 @@
         <Units></Units>
         <Description>Current Green Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5062</ResourceID>
         <Name>Current Blue</Name>
@@ -45,8 +41,6 @@
         <Units></Units>
         <Description>Current Blue Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5052</ResourceID>
         <Name>Actions</Name>
@@ -58,8 +52,6 @@
         <Units></Units>
         <Description>Reusable resource for current collection of actions</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5053</ResourceID>
         <Name>Current Action</Name>
@@ -71,8 +63,6 @@
         <Units></Units>
         <Description>Index in Actions array of the current action</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
@@ -84,8 +74,6 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5003</ResourceID>
         <Name>Remaining Time</Name>
@@ -97,8 +85,6 @@
         <Units>ucum:%</Units>
         <Description>Time left to execute teh current Action</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5004</ResourceID>
         <Name>Stop</Name>
@@ -110,8 +96,6 @@
         <Units></Units>
         <Description>Stop the currently executing Action</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5063</ResourceID>
         <Name>Change Red</Name>
@@ -123,8 +107,6 @@
         <Units></Units>
         <Description>Change Red Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5064</ResourceID>
         <Name>Change Green</Name>
@@ -136,8 +118,6 @@
         <Units></Units>
         <Description>Change Green Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5065</ResourceID>
         <Name>Change Blue</Name>
@@ -149,8 +129,6 @@
         <Units></Units>
         <Description>Change Blue Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5066</ResourceID>
         <Name>Move Red</Name>
@@ -162,8 +140,6 @@
         <Units>ucum:%/ucum:sec</Units>
         <Description>Move Red settig per second Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5067</ResourceID>
         <Name>Move Green</Name>
@@ -175,8 +151,6 @@
         <Units>ucum:%/ucum:sec</Units>
         <Description>Move Green settig per second Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5068</ResourceID>
         <Name>Move Blue</Name>
@@ -188,8 +162,6 @@
         <Units>ucum:%/ucum:sec</Units>
         <Description>Move Blue settig per second Setting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5069</ResourceID>
         <Name>Step Red</Name>
@@ -201,8 +173,6 @@
         <Units>ucum:%</Units>
         <Description>Step Red setting relative to current value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5070</ResourceID>
         <Name>Step Green</Name>
@@ -214,8 +184,6 @@
         <Units>ucum:%</Units>
         <Description>Step Green setting relative to current value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5071</ResourceID>
         <Name>Step Blue</Name>
@@ -227,8 +195,6 @@
         <Units>ucum:%</Units>
         <Description>Step Blue setting relative to current value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5007</ResourceID>
         <Name>Step Time</Name>
@@ -240,8 +206,6 @@
         <Units>ucum:s</Units>
         <Description>Time to move Step amount</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Link Group for collective interaction with local objects",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5054,
             "Name": "Instance List",
             "Operations": "CRWD",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Array of links to local object instances"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5079,
             "Name": "Instance group",
             "Operations": "RWE",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Used to interact with all instances collectively"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -47,8 +43,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

@@ -19,8 +19,6 @@
         <Units></Units>
         <Description>RFC3986 URI with shceme and authority</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5048</ResourceID>
         <Name>Short ID</Name>
@@ -32,8 +30,6 @@
         <Units></Units>
         <Description>Short ID for ACL reference</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5049</ResourceID>
         <Name>Public Key</Name>
@@ -45,8 +41,6 @@
         <Units></Units>
         <Description>Local Public Key used in Handshake</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5050</ResourceID>
         <Name>Private Key</Name>
@@ -58,8 +52,6 @@
         <Units></Units>
         <Description>Local Private Key used in verification and signing</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5051</ResourceID>
         <Name>External Public Key</Name>
@@ -71,8 +63,6 @@
         <Units></Units>
         <Description>Remote Public Key used in Handshake</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

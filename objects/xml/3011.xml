@@ -19,8 +19,6 @@
         <Units>ucum:%</Units>
         <Description>Name of a scene or other item in a collection</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
@@ -32,8 +30,6 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5054</ResourceID>
         <Name>Instance List</Name>
@@ -45,8 +41,6 @@
         <Units></Units>
         <Description>Array of links to local object instances</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5074</ResourceID>
         <Name>Scene Configurtion</Name>
@@ -58,8 +52,6 @@
         <Units></Units>
         <Description>A SenML template for updating object instances as scene members</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

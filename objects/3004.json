@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Color control using Color Temperature",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5031,
             "Name": "Current Color Temp",
             "Operations": "RW",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:k",
             "Description": "Current value of Color Temperature in degrees K for CT light control mode"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5052,
             "Name": "Actions",
             "Operations": "CRWD",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "JSON",
             "Units": "",
             "Description": "Reusable resource for current collection of actions"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5053,
             "Name": "Current Action",
             "Operations": "R",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Index in Actions array of the current action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5002,
             "Name": "Transition Time",
             "Operations": "RW",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time to reach the new state or value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5003,
             "Name": "Remaining Time",
             "Operations": "RW",
@@ -72,10 +64,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time left to execute teh current Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5004,
             "Name": "Stop",
             "Operations": "E",
@@ -85,10 +75,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Stop the currently executing Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5059,
             "Name": "Change Color Temperature",
             "Operations": "E",
@@ -98,10 +86,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:degK",
             "Description": "Change Color Temperature Setting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5036,
             "Name": "Move Color Temp",
             "Operations": "E",
@@ -111,10 +97,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Start Move Color Temp Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5041,
             "Name": "Step Color Temp",
             "Operations": "E",
@@ -124,10 +108,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Start Step Color Temp Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5007,
             "Name": "Step Time",
             "Operations": "RW",
@@ -137,10 +119,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:s",
             "Description": "Time to move Step amount"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -151,8 +131,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

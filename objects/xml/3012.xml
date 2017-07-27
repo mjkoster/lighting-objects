@@ -19,8 +19,6 @@
         <Units></Units>
         <Description>The most recently recalled Scene</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5076</ResourceID>
         <Name>Recall Scene</Name>
@@ -32,8 +30,6 @@
         <Units></Units>
         <Description>Recall the indicated Scene</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
@@ -45,8 +41,6 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5073</ResourceID>
         <Name>Valid</Name>
@@ -58,8 +52,6 @@
         <Units>ucum:%</Units>
         <Description>Indicates that the value obtained is the most current value, e.g. a scene state matches the state of all resources in the scene</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5077</ResourceID>
         <Name>Update Scene</Name>
@@ -71,8 +63,6 @@
         <Units></Units>
         <Description>Update the current scene or the linked scene</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

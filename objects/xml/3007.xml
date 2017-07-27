@@ -19,8 +19,6 @@
         <Units></Units>
         <Description>An Object Link to the Containing Object Instance</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5017</ResourceID>
         <Name>Resource ID</Name>
@@ -32,8 +30,6 @@
         <Units></Units>
         <Description>Indicates which Resource ID to use with a link or binding</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5045</ResourceID>
         <Name>Target Object</Name>
@@ -45,8 +41,6 @@
         <Units></Units>
         <Description>Local Object Target of a binding</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5046</ResourceID>
         <Name>Target Resource</Name>
@@ -58,8 +52,6 @@
         <Units></Units>
         <Description>Local resource in object target of a binding</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5018</ResourceID>
         <Name>Target IRI</Name>
@@ -71,8 +63,6 @@
         <Units></Units>
         <Description>IRI to use as the external target of a binding, URI format</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5019</ResourceID>
         <Name>Binding type</Name>
@@ -84,8 +74,6 @@
         <Units></Units>
         <Description>enum of 0=Write, WriteSync, Exec, ExecSync, ReadPoll, 5=Observe</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5020</ResourceID>
         <Name>Poll Interval</Name>
@@ -97,8 +85,6 @@
         <Units>ucum:s</Units>
         <Description>ReadPoll Interval</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5021</ResourceID>
         <Name>Payload Template</Name>
@@ -110,8 +96,6 @@
         <Units></Units>
         <Description>Template for a payload expected for e.g. an Action</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5022</ResourceID>
         <Name>Pmin</Name>
@@ -123,8 +107,6 @@
         <Units>ucum:s</Units>
         <Description>Minumum notification period on variable state change</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5023</ResourceID>
         <Name>Pmax</Name>
@@ -136,8 +118,6 @@
         <Units>ucum:s</Units>
         <Description>Maximum notification period on variable state change</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5024</ResourceID>
         <Name>LT</Name>
@@ -149,8 +129,6 @@
         <Units>ucum:%</Units>
         <Description>Minimum (lower) value threshold</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5025</ResourceID>
         <Name>GT</Name>
@@ -162,8 +140,6 @@
         <Units>ucum:%</Units>
         <Description>Maximum (upper) value threshold</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5026</ResourceID>
         <Name>Step</Name>
@@ -175,8 +151,6 @@
         <Units>ucum:%</Units>
         <Description>Step value threshold</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5042</ResourceID>
         <Name>Notification Options</Name>
@@ -188,8 +162,6 @@
         <Units></Units>
         <Description>Use Band Notification for LT and GT reporting</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5043</ResourceID>
         <Name>SV</Name>
@@ -201,8 +173,6 @@
         <Units></Units>
         <Description>String report filter</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

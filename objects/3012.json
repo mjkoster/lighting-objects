@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Scene Control Object",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5075,
             "Name": "Current Scene",
             "Operations": "R",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "The most recently recalled Scene"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5076,
             "Name": "Recall Scene",
             "Operations": "E",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Recall the indicated Scene"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5002,
             "Name": "Transition Time",
             "Operations": "RW",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time to reach the new state or value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5073,
             "Name": "Valid",
             "Operations": "R",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Indicates that the value obtained is the most current value, e.g. a scene state matches the state of all resources in the scene"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5077,
             "Name": "Update Scene",
             "Operations": "E",
@@ -72,10 +64,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Update the current scene or the linked scene"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -86,8 +76,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

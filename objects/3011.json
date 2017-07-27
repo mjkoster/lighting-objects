@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Scene Definition Object",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5072,
             "Name": "Name",
             "Operations": "RW",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Name of a scene or other item in a collection"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5002,
             "Name": "Transition Time",
             "Operations": "RW",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Time to reach the new state or value"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5054,
             "Name": "Instance List",
             "Operations": "CRWD",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Array of links to local object instances"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5074,
             "Name": "Scene Configurtion",
             "Operations": "RW",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "SenML",
             "Units": "",
             "Description": "A SenML template for updating object instances as scene members"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -73,8 +65,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

@@ -19,8 +19,6 @@
         <Units></Units>
         <Description>Array of links to local object instances</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5079</ResourceID>
         <Name>Instance group</Name>
@@ -32,8 +30,6 @@
         <Units></Units>
         <Description>Used to interact with all instances collectively</Description>
       </Item>
-    </Resources>
-    <Resources>
       <Item>
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>

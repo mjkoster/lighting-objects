@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Network Group Object e.g. to map a multicast address",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5047,
             "Name": "Network Address",
             "Operations": "RW",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "RFC3986 URI with shceme and authority"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5078,
             "Name": "Application Group",
             "Operations": "RW",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Identifier of a protocol-specific applicaiton group"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5048,
             "Name": "Short ID",
             "Operations": "RW",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Short ID for ACL reference"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5049,
             "Name": "Public Key",
             "Operations": "R",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Local Public Key used in Handshake"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5050,
             "Name": "Private Key",
             "Operations": "E",
@@ -72,10 +64,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Local Private Key used in verification and signing"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5051,
             "Name": "External Public Key",
             "Operations": "RW",
@@ -85,10 +75,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Remote Public Key used in Handshake"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -99,8 +87,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

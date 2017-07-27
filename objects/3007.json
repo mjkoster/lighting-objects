@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Binding client action to resource state change",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item":[
+          {
             "ResourceID": 5016,
             "Name": "Object Instance",
             "Operations": "R",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "An Object Link to the Containing Object Instance"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5017,
             "Name": "Resource ID",
             "Operations": "RW",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Indicates which Resource ID to use with a link or binding"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5045,
             "Name": "Target Object",
             "Operations": "RW",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Local Object Target of a binding"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5046,
             "Name": "Target Resource",
             "Operations": "E",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Local resource in object target of a binding"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5018,
             "Name": "Target IRI",
             "Operations": "RW",
@@ -72,10 +64,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "IRI to use as the external target of a binding, URI format"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5019,
             "Name": "Binding type",
             "Operations": "RW",
@@ -85,10 +75,8 @@
             "RangeEnumeration": "0-5",
             "Units": "",
             "Description": "enum of 0=Write, WriteSync, Exec, ExecSync, ReadPoll, 5=Observe"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5020,
             "Name": "Poll Interval",
             "Operations": "RW",
@@ -98,10 +86,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:s",
             "Description": "ReadPoll Interval"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5021,
             "Name": "Payload Template",
             "Operations": "RW",
@@ -111,10 +97,8 @@
             "RangeEnumeration": "JSON",
             "Units": "",
             "Description": "Template for a payload expected for e.g. an Action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5022,
             "Name": "Pmin",
             "Operations": "RW",
@@ -124,10 +108,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:s",
             "Description": "Minumum notification period on variable state change"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5023,
             "Name": "Pmax",
             "Operations": "RW",
@@ -137,10 +119,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:s",
             "Description": "Maximum notification period on variable state change"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5024,
             "Name": "LT",
             "Operations": "RW",
@@ -150,10 +130,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Minimum (lower) value threshold"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5025,
             "Name": "GT",
             "Operations": "RW",
@@ -163,10 +141,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Maximum (upper) value threshold"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5026,
             "Name": "Step",
             "Operations": "RW",
@@ -176,10 +152,8 @@
             "RangeEnumeration": "",
             "Units": "ucum:%",
             "Description": "Step value threshold"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5042,
             "Name": "Notification Options",
             "Operations": "RW",
@@ -189,10 +163,8 @@
             "RangeEnumeration": "Band",
             "Units": "",
             "Description": "Use Band Notification for LT and GT reporting"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5043,
             "Name": "SV",
             "Operations": "RW",
@@ -202,10 +174,8 @@
             "RangeEnumeration": "regex",
             "Units": "",
             "Description": "String report filter"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -216,8 +186,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }
