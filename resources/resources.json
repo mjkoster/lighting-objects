@@ -1,0 +1,1032 @@
+{
+      "Resources": [
+
+      {
+        "Item": {
+          "ResourceID": 5000,
+          "Name": "Toggle",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Opaque",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Current State := Current State XOR TRUE"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5001,
+          "Name": "Current Level",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "The Current Level Value in % or units specified by Units resource"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5002,
+          "Name": "Transition Time",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Time to reach the new state or value"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5003,
+          "Name": "Remaining Time",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Time left to execute teh current Action"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5004,
+          "Name": "Stop",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Opaque",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Stop the currently executing Action"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5005,
+          "Name": "Move",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%/ucum:s",
+          "Description": "Start Move operatoin at a given rate, % per second"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5006,
+          "Name": "Step",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Start Step operation of a given size"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5007,
+          "Name": "Step Time",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:s",
+          "Description": "Time to move Step amount"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5008,
+          "Name": "OnOff Link",
+          "Operations": "RW",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Associated OnOff Actuator"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5009,
+          "Name": "On Level",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Go to this level when OnOff is set to On"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5010,
+          "Name": "OnOff Transition Time",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:s",
+          "Description": "Time to move OnOff state from off to on, or from on to off"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5011,
+          "Name": "OnOff Control",
+          "Operations": "R",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Boolean",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "The state of an OnOff control element, e.g. a user control"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5012,
+          "Name": "Level Control",
+          "Operations": "R",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "The setting of a level control element, e.g. a user control"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5013,
+          "Name": "Momentary Switch",
+          "Operations": "R",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Boolean",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "The state of a momentary switch like a user push button"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5014,
+          "Name": "Up or Increment",
+          "Operations": "R",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Boolean",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "The state of a momentary switch that indicates an expected increase in value"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5016,
+          "Name": "Object Instance",
+          "Operations": "R",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "An Object Link to the Containing Object Instance"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5017,
+          "Name": "Resource ID",
+          "Operations": "RW",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Integer",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Indicates which Resource ID to use with a link or binding"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5018,
+          "Name": "Target IRI",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Boolean",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "IRI to use as the external target of a binding, URI format"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5019,
+          "Name": "Binding type",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Integer",
+          "RangeEnumeration": "0-5",
+          "Units": "",
+          "Description": "enum of 0=Write, WriteSync, Exec, ExecSync, ReadPoll, 5=Observe"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5020,
+          "Name": "Poll Interval",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:s",
+          "Description": "ReadPoll Interval"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5021,
+          "Name": "Payload Template",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "JSON",
+          "Units": "",
+          "Description": "Template for a payload expected for e.g. an Action"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5022,
+          "Name": "Pmin",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:s",
+          "Description": "Minumum notification period on variable state change"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5023,
+          "Name": "Pmax",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:s",
+          "Description": "Maximum notification period on variable state change"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5024,
+          "Name": "LT",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Number",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Minimum (lower) value threshold"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5025,
+          "Name": "GT",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Number",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Maximum (upper) value threshold"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5026,
+          "Name": "Step",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Number",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Step value threshold"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5027,
+          "Name": "Current Hue",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "0-360",
+          "Units": "",
+          "Description": "Current value of hue setting for HS light control mode"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5028,
+          "Name": "Current Saturation",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Current value of saturation setting for HS light control mode"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5029,
+          "Name": "Current X",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Current value of X setting for XY light control mode"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5030,
+          "Name": "Current Y",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Current value of Y setting for XY light control mode"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5031,
+          "Name": "Current Color Temp",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:k",
+          "Description": "Current value of Color Temperature in degrees K for CT light control mode"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5032,
+          "Name": "Move Hue",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Move Hue Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5033,
+          "Name": "Move Saturation",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Move Saturation Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5034,
+          "Name": "Move X",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Move X Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5035,
+          "Name": "Move Y",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Move Y Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5036,
+          "Name": "Move Color Temp",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Move Color Temp Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5037,
+          "Name": "Step Hue",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Step Hue Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5038,
+          "Name": "Step Saturation",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Step Saturation Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5039,
+          "Name": "Step X",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Step X Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5040,
+          "Name": "Step Y",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Step Y Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5041,
+          "Name": "Step Color Temp",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Start Step Color Temp Operation at the given rate"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5042,
+          "Name": "Notification Options",
+          "Operations": "RW",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "Band",
+          "Units": "",
+          "Description": "Use Band Notification for LT and GT reporting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5043,
+          "Name": "SV",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "regex",
+          "Units": "",
+          "Description": "String report filter"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5044,
+          "Name": "Change Level",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Level Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5045,
+          "Name": "Target Object",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Local Object Target of a binding"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5046,
+          "Name": "Target Resource",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Integer",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Local resource in object target of a binding"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5047,
+          "Name": "Network Address",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "RFC3986 URI with shceme and authority"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5048,
+          "Name": "Short ID",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Integer",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Short ID for ACL reference"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5049,
+          "Name": "Public Key",
+          "Operations": "R",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Local Public Key used in Handshake"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5050,
+          "Name": "Private Key",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Opaque",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Local Private Key used in verification and signing"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5051,
+          "Name": "External Public Key",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Remote Public Key used in Handshake"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5052,
+          "Name": "Actions",
+          "Operations": "CRWD",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "JSON",
+          "Units": "",
+          "Description": "Reusable resource for current collection of actions"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5053,
+          "Name": "Current Action",
+          "Operations": "R",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Integer",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Index inActions array of the current action"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5054,
+          "Name": "Instance List",
+          "Operations": "CRWD",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Array of links to local object instances"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5055,
+          "Name": "Change Hue",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Hue Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5056,
+          "Name": "Change Saturation",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Saturation Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5057,
+          "Name": "Change X",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change X Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5058,
+          "Name": "Change Y",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Y Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5059,
+          "Name": "Change Color Temperature",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:degK",
+          "Description": "Change Color Temperature Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5060,
+          "Name": "Current Red",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Current Red Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5061,
+          "Name": "Current Green",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Current Green Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5062,
+          "Name": "Current Blue",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Current Blue Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5063,
+          "Name": "Change Red",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Red Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5064,
+          "Name": "Change Green",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Green Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5065,
+          "Name": "Change Blue",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Change Blue Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5066,
+          "Name": "Move Red",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%/ucum:sec",
+          "Description": "Move Red settig per second Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5067,
+          "Name": "Move Green",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%/ucum:sec",
+          "Description": "Move Green settig per second Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5068,
+          "Name": "Move Blue",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%/ucum:sec",
+          "Description": "Move Blue settig per second Setting"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5069,
+          "Name": "Step Red",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Step Red setting relative to current value"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5070,
+          "Name": "Step Green",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Step Green setting relative to current value"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5071,
+          "Name": "Step Blue",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Float",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Step Blue setting relative to current value"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5072,
+          "Name": "Name",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Name of a scene or other item in a collection"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5073,
+          "Name": "Valid",
+          "Operations": "R",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Boolean",
+          "RangeEnumeration": "",
+          "Units": "ucum:%",
+          "Description": "Indicates that the value obtained is the most current value, e.g. a scene state matches the state of all resources in the scene"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5074,
+          "Name": "Scene Configurtion",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "String",
+          "RangeEnumeration": "SenML",
+          "Units": "",
+          "Description": "A SenML template for updating object instances as scene members"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5075,
+          "Name": "Current Scene",
+          "Operations": "R",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "The most recently recalled Scene"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5076,
+          "Name": "Recall Scene",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Recall the indicated Scene"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5077,
+          "Name": "Update Scene",
+          "Operations": "E",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Update the current scene or the linked scene"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5078,
+          "Name": "Application Group",
+          "Operations": "RW",
+          "MultipleInstances": "Single",
+          "Mandatory": "Optional",
+          "Type": "Integer",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Identifier of a protocol-specific applicaiton group"
+        }
+      },
+      {
+        "Item": {
+          "ResourceID": 5079,
+          "Name": "Instance group",
+          "Operations": "RWE",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Objlink",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "Used to interact with all instances collectively"
+        }
+      }
+    ]
+}

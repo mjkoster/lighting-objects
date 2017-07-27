@@ -1,0 +1,41 @@
+
+{
+  "LWM2M" : {
+    "Object" : {
+      "ObjectID": 3000,
+      "ObjectURN": "urn:oma:lwm2m:ext:3000",
+      "Name": "OnOff",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Description": "Sensor or Actuator for On/Off Control",
+      "Resources": [
+        {
+          "Item": {
+            "ResourceID": 5850,
+            "Name": "Current State",
+            "Operations": "RW",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Mandatory",
+            "Type": "Boolean",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The Curent State"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5000,
+            "Name": "Toggle",
+            "Operations": "E",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Opaque",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Current State := Current State XOR TRUE"
+          }
+        }
+      ]
+    }
+  }
+}
