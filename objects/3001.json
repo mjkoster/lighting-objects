@@ -1,0 +1,210 @@
+
+{
+  "LWM2M" : {
+    "Object" : {
+      "ObjectID": 3001,
+      "ObjectURN": "urn:oma:lwm2m:ext:3001",
+      "Name": "Level",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Description": "Sensor or Actuator for Proportional Level Control",
+      "Resources": [
+        {
+          "Item": {
+            "ResourceID": 5001,
+            "Name": "Current Level",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "The Current Level Value in % or units specified by Units resource"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5701,
+            "Name": "Units",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Engineering Units"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5052,
+            "Name": "Actions",
+            "Operations": "CRWD",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "JSON",
+            "Units": "",
+            "Description": "Reusable resource for current collection of actions"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5053,
+            "Name": "Current Action",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Integer",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Index in Actions array of the current action"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5044,
+            "Name": "Change Level",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Change Level Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5002,
+            "Name": "Transition Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Time to reach the new state or value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5003,
+            "Name": "Remaining Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Time left to execute teh current Action"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5004,
+            "Name": "Stop",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Opaque",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Stop the currently executing Action"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5005,
+            "Name": "Move",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%/ucum:s",
+            "Description": "Start Move operatoin at a given rate, % per second"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5006,
+            "Name": "Step",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Start Step operation of a given size"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5007,
+            "Name": "Step Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:s",
+            "Description": "Time to move Step amount"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5008,
+            "Name": "OnOff Link",
+            "Operations": "RW",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Objlink",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Associated OnOff Actuator"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5009,
+            "Name": "On Level",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Go to this level when OnOff is set to On"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5010,
+            "Name": "OnOff Transition Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:s",
+            "Description": "Time to move OnOff state from off to on, or from on to off"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5750,
+            "Name": "Application Type",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The application type or use context"
+          }
+        }
+      ]
+    }
+  }
+}

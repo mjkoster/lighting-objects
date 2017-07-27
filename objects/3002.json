@@ -1,0 +1,210 @@
+
+{
+  "LWM2M" : {
+    "Object" : {
+      "ObjectID": 3001,
+      "ObjectURN": "urn:oma:lwm2m:ext:3001",
+      "Name": "Level",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Description": "Sensor or Actuator for Proportional Level Control",
+      "Resources": [
+        {
+          "Item": {
+            "ResourceID": 5027,
+            "Name": "Current Hue",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "0-360",
+            "Units": "",
+            "Description": "Current value of hue setting for HS light control mode"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5028,
+            "Name": "Current Saturation",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Current value of saturation setting for HS light control mode"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5052,
+            "Name": "Actions",
+            "Operations": "CRWD",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "JSON",
+            "Units": "",
+            "Description": "Reusable resource for current collection of actions"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5053,
+            "Name": "Current Action",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Integer",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Index in Actions array of the current action"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5002,
+            "Name": "Transition Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Time to reach the new state or value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5003,
+            "Name": "Remaining Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "Time left to execute teh current Action"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5004,
+            "Name": "Stop",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Opaque",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Stop the currently executing Action"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5055,
+            "Name": "Change Hue",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Change Hue Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5056,
+            "Name": "Change Saturation",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Change Saturation Setting"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5032,
+            "Name": "Move Hue",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Start Move Hue Operation at the given rate"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5033,
+            "Name": "Move Saturation",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Start Move Saturation Operation at the given rate"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5037,
+            "Name": "Step Hue",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Start Step Hue Operation at the given rate"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5038,
+            "Name": "Step Saturation",
+            "Operations": "E",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "Start Step Saturation Operation at the given rate"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5007,
+            "Name": "Step Time",
+            "Operations": "RW",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:s",
+            "Description": "Time to move Step amount"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5750,
+            "Name": "Application Type",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The application type or use context"
+          }
+        }
+      ]
+    }
+  }
+}
