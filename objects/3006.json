@@ -1,0 +1,93 @@
+
+{
+  "LWM2M" : {
+    "Object" : {
+      "ObjectID": 3006,
+      "ObjectURN": "urn:oma:lwm2m:ext:3006",
+      "Name": "Controller",
+      "MultipleInstances": "Multiple",
+      "Mandatory": "Optional",
+      "Description": "Controller device such as a wall mounted switch",
+      "Resources": [
+        {
+          "Item": {
+            "ResourceID": 5011,
+            "Name": "OnOff Control",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Boolean",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The state of an OnOff control element, e.g. a user control"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5012,
+            "Name": "Level Control",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Float",
+            "RangeEnumeration": "",
+            "Units": "ucum:%",
+            "Description": "The setting of a level control element, e.g. a user control"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5013,
+            "Name": "Momentary Switch",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Boolean",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The state of a momentary switch like a user push button"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5014,
+            "Name": "Up or Increment",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Boolean",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The state of a momentary switch that indicates an expected increase in value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5015,
+            "Name": "Down or Decrement",
+            "Operations": "R",
+            "MultipleInstances": "Multiple",
+            "Mandatory": "Optional",
+            "Type": "Boolean",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The state of a momentary switch that indicates an expected decrease in value"
+          }
+        },
+        {
+          "Item": {
+            "ResourceID": 5750,
+            "Name": "Application Type",
+            "Operations": "R",
+            "MultipleInstances": "Single",
+            "Mandatory": "Optional",
+            "Type": "String",
+            "RangeEnumeration": "",
+            "Units": "",
+            "Description": "The application type or use context"
+          }
+        }
+      ]
+    }
+  }
+}

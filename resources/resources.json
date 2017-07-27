@@ -198,6 +198,19 @@
       },
       {
         "Item": {
+          "ResourceID": 5015,
+          "Name": "Down or Decrement",
+          "Operations": "R",
+          "MultipleInstances": "Multiple",
+          "Mandatory": "Optional",
+          "Type": "Boolean",
+          "RangeEnumeration": "",
+          "Units": "",
+          "Description": "The state of a momentary switch that indicates an expected decrease in value"
+        }
+      },
+      {
+        "Item": {
           "ResourceID": 5016,
           "Name": "Object Instance",
           "Operations": "R",
