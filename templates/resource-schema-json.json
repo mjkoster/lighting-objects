@@ -1,0 +1,15 @@
+{
+  "ResourceDefinition":
+    {
+      "ResourceID": { "type": "integer", "example": 5000 },
+      "ResourceURN": { "type": "string", "example": "urn:oma:lwm2m:ext:5000" },
+      "Name": { "type": "string" },
+      "Operations": { "oneOf": ["R", "W", "RW", "E"] },
+      "MultipleInstances": { "oneOf": ["Single", "Multiple"] },
+      "Mandatory": { "oneOf": ["Mandatory", "Optional"] },
+      "Type": { "oneOf": ["Integer", "Float", "Boolean", "String", "Time", "Objlink", "Opaque" ] },
+      "RangeEnumeration": { "type": "string", "example": "on, off" },
+      "Units": { "type": "string", "example": "ucum:%" },
+      "Description": { "type": "string" }
+    }
+}

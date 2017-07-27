@@ -1,0 +1,27 @@
+
+{
+  "ObjectDefinition":
+    {
+      "ObjectID": { "type": "integer", "example": 3000 },
+      "ObjectURN": { "type": "string", "example": "urn:oma:lwm2m:ext:3000" },
+      "Name": { "type": "string" },
+      "MultipleInstances": { "oneOf": ["Single", "Multiple"] },
+      "Mandatory": { "oneOf": ["Mandatory", "Optional"] },
+      "Description": { "type": "string"},
+      "Resources":
+        [
+          {
+            "ResourceID": { "type": "integer", "example": 5000 },
+            "ResourceURN": { "type": "string", "example": "urn:oma:lwm2m:ext:5000" },
+            "Name": { "type": "string" },
+            "Operations": { "oneOf": ["R", "W", "RW", "E"] },
+            "MultipleInstances": { "oneOf": ["Single", "Multiple"] },
+            "Mandatory": { "oneOf": ["Mandatory", "Optional"] },
+            "Type": { "oneOf": ["Integer", "Float", "Boolean", "String", "Time", "Objlink", "Opaque" ] },
+            "RangeEnumeration": { "type": "string", "example": "on, off" },
+            "Units": { "type": "string", "example": "ucum:%" },
+            "Description": { "type": "string" }
+          }
+        ]
+    }
+}
