@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3005</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3005</ObjectURN>
     <Name>Color RGB</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Color control using the RGB Color Space</Description>
     <Resources>
-      <Item>
+      <Item ID="5060">
         <ResourceID>5060</ResourceID>
         <Name>Current Red</Name>
         <Operations>RW</Operations>
@@ -19,7 +19,7 @@
         <Units></Units>
         <Description>Current Red Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5061">
         <ResourceID>5061</ResourceID>
         <Name>Current Green</Name>
         <Operations>RW</Operations>
@@ -30,7 +30,7 @@
         <Units></Units>
         <Description>Current Green Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5062">
         <ResourceID>5062</ResourceID>
         <Name>Current Blue</Name>
         <Operations>RW</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>Current Blue Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5052">
         <ResourceID>5052</ResourceID>
         <Name>Actions</Name>
         <Operations>CRWD</Operations>
@@ -52,7 +52,7 @@
         <Units></Units>
         <Description>Reusable resource for current collection of actions</Description>
       </Item>
-      <Item>
+      <Item ID="5053">
         <ResourceID>5053</ResourceID>
         <Name>Current Action</Name>
         <Operations>R</Operations>
@@ -63,7 +63,7 @@
         <Units></Units>
         <Description>Index in Actions array of the current action</Description>
       </Item>
-      <Item>
+      <Item ID="5002">
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
         <Operations>RW</Operations>
@@ -74,7 +74,7 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-      <Item>
+      <Item ID="5003">
         <ResourceID>5003</ResourceID>
         <Name>Remaining Time</Name>
         <Operations>RW</Operations>
@@ -85,7 +85,7 @@
         <Units>ucum:%</Units>
         <Description>Time left to execute teh current Action</Description>
       </Item>
-      <Item>
+      <Item ID="5004">
         <ResourceID>5004</ResourceID>
         <Name>Stop</Name>
         <Operations>E</Operations>
@@ -96,7 +96,7 @@
         <Units></Units>
         <Description>Stop the currently executing Action</Description>
       </Item>
-      <Item>
+      <Item ID="5063">
         <ResourceID>5063</ResourceID>
         <Name>Change Red</Name>
         <Operations>E</Operations>
@@ -107,7 +107,7 @@
         <Units></Units>
         <Description>Change Red Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5064">
         <ResourceID>5064</ResourceID>
         <Name>Change Green</Name>
         <Operations>E</Operations>
@@ -118,7 +118,7 @@
         <Units></Units>
         <Description>Change Green Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5065">
         <ResourceID>5065</ResourceID>
         <Name>Change Blue</Name>
         <Operations>E</Operations>
@@ -129,7 +129,7 @@
         <Units></Units>
         <Description>Change Blue Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5066">
         <ResourceID>5066</ResourceID>
         <Name>Move Red</Name>
         <Operations>E</Operations>
@@ -140,7 +140,7 @@
         <Units>ucum:%/ucum:sec</Units>
         <Description>Move Red settig per second Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5067">
         <ResourceID>5067</ResourceID>
         <Name>Move Green</Name>
         <Operations>E</Operations>
@@ -151,7 +151,7 @@
         <Units>ucum:%/ucum:sec</Units>
         <Description>Move Green settig per second Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5068">
         <ResourceID>5068</ResourceID>
         <Name>Move Blue</Name>
         <Operations>E</Operations>
@@ -162,7 +162,7 @@
         <Units>ucum:%/ucum:sec</Units>
         <Description>Move Blue settig per second Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5069">
         <ResourceID>5069</ResourceID>
         <Name>Step Red</Name>
         <Operations>E</Operations>
@@ -173,7 +173,7 @@
         <Units>ucum:%</Units>
         <Description>Step Red setting relative to current value</Description>
       </Item>
-      <Item>
+      <Item ID="5070">
         <ResourceID>5070</ResourceID>
         <Name>Step Green</Name>
         <Operations>E</Operations>
@@ -184,7 +184,7 @@
         <Units>ucum:%</Units>
         <Description>Step Green setting relative to current value</Description>
       </Item>
-      <Item>
+      <Item ID="5071">
         <ResourceID>5071</ResourceID>
         <Name>Step Blue</Name>
         <Operations>E</Operations>
@@ -195,7 +195,7 @@
         <Units>ucum:%</Units>
         <Description>Step Blue setting relative to current value</Description>
       </Item>
-      <Item>
+      <Item ID="5007">
         <ResourceID>5007</ResourceID>
         <Name>Step Time</Name>
         <Operations>RW</Operations>
@@ -206,7 +206,7 @@
         <Units>ucum:s</Units>
         <Description>Time to move Step amount</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

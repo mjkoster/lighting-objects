@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3010</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3010</ObjectURN>
     <Name>Link Group</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Link Group for collective interaction with local objects</Description>
     <Resources>
-      <Item>
+      <Item ID="5054">
         <ResourceID>5054</ResourceID>
         <Name>Instance List</Name>
         <Operations>CRWD</Operations>
@@ -19,7 +19,7 @@
         <Units></Units>
         <Description>Array of links to local object instances</Description>
       </Item>
-      <Item>
+      <Item ID="5079">
         <ResourceID>5079</ResourceID>
         <Name>Instance group</Name>
         <Operations>RWE</Operations>
@@ -30,7 +30,7 @@
         <Units></Units>
         <Description>Used to interact with all instances collectively</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

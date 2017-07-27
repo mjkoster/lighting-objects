@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3001</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3001</ObjectURN>
     <Name>Level</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Sensor or Actuator for Proportional Level Control</Description>
     <Resources>
-      <Item>
+      <Item ID="5001">
         <ResourceID>5001</ResourceID>
         <Name>Current Level</Name>
         <Operations>RW</Operations>
@@ -19,7 +19,7 @@
         <Units>ucum:%</Units>
         <Description>The Current Level Value in % or units specified by Units resource</Description>
       </Item>
-      <Item>
+      <Item ID="5701">
         <ResourceID>5701</ResourceID>
         <Name>Units</Name>
         <Operations>R</Operations>
@@ -30,7 +30,7 @@
         <Units></Units>
         <Description>Engineering Units</Description>
       </Item>
-      <Item>
+      <Item ID="5052">
         <ResourceID>5052</ResourceID>
         <Name>Actions</Name>
         <Operations>CRWD</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>Reusable resource for current collection of actions</Description>
       </Item>
-      <Item>
+      <Item ID="5053">
         <ResourceID>5053</ResourceID>
         <Name>Current Action</Name>
         <Operations>R</Operations>
@@ -52,7 +52,7 @@
         <Units></Units>
         <Description>Index in Actions array of the current action</Description>
       </Item>
-      <Item>
+      <Item ID="5044">
         <ResourceID>5044</ResourceID>
         <Name>Change Level</Name>
         <Operations>E</Operations>
@@ -63,7 +63,7 @@
         <Units></Units>
         <Description>Change Level Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5002">
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
         <Operations>RW</Operations>
@@ -74,7 +74,7 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-      <Item>
+      <Item ID="5003">
         <ResourceID>5003</ResourceID>
         <Name>Remaining Time</Name>
         <Operations>RW</Operations>
@@ -85,7 +85,7 @@
         <Units>ucum:%</Units>
         <Description>Time left to execute teh current Action</Description>
       </Item>
-      <Item>
+      <Item ID="5004">
         <ResourceID>5004</ResourceID>
         <Name>Stop</Name>
         <Operations>E</Operations>
@@ -96,7 +96,7 @@
         <Units></Units>
         <Description>Stop the currently executing Action</Description>
       </Item>
-      <Item>
+      <Item ID="5005">
         <ResourceID>5005</ResourceID>
         <Name>Move</Name>
         <Operations>E</Operations>
@@ -107,7 +107,7 @@
         <Units>ucum:%/ucum:s</Units>
         <Description>Start Move operatoin at a given rate, % per second</Description>
       </Item>
-      <Item>
+      <Item ID="5006">
         <ResourceID>5006</ResourceID>
         <Name>Step</Name>
         <Operations>E</Operations>
@@ -118,7 +118,7 @@
         <Units>ucum:%</Units>
         <Description>Start Step operation of a given size</Description>
       </Item>
-      <Item>
+      <Item ID="5007">
         <ResourceID>5007</ResourceID>
         <Name>Step Time</Name>
         <Operations>RW</Operations>
@@ -129,7 +129,7 @@
         <Units>ucum:s</Units>
         <Description>Time to move Step amount</Description>
       </Item>
-      <Item>
+      <Item ID="5008">
         <ResourceID>5008</ResourceID>
         <Name>OnOff Link</Name>
         <Operations>RW</Operations>
@@ -140,7 +140,7 @@
         <Units></Units>
         <Description>Associated OnOff Actuator</Description>
       </Item>
-      <Item>
+      <Item ID="5009">
         <ResourceID>5009</ResourceID>
         <Name>On Level</Name>
         <Operations>RW</Operations>
@@ -151,7 +151,7 @@
         <Units>ucum:%</Units>
         <Description>Go to this level when OnOff is set to On</Description>
       </Item>
-      <Item>
+      <Item ID="5010">
         <ResourceID>5010</ResourceID>
         <Name>OnOff Transition Time</Name>
         <Operations>RW</Operations>
@@ -162,7 +162,7 @@
         <Units>ucum:s</Units>
         <Description>Time to move OnOff state from off to on, or from on to off</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

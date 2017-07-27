@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3000</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3000</ObjectURN>
     <Name>OnOff</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Sensor or Actuator for On/Off Control</Description>
     <Resources>
-      <Item>
+      <Item ID="5850">
         <ResourceID>5850</ResourceID>
         <Name>Current State</Name>
         <Operations>RW</Operations>
@@ -19,7 +19,7 @@
         <Units></Units>
         <Description>The Curent State</Description>
       </Item>
-      <Item>
+      <Item ID="5000">
         <ResourceID>5000</ResourceID>
         <Name>Toggle</Name>
         <Operations>E</Operations>
@@ -30,7 +30,7 @@
         <Units></Units>
         <Description>Current State := Current State XOR TRUE</Description>
       </Item>
-      <Item>
+      <Item ID="5052">
         <ResourceID>5052</ResourceID>
         <Name>Actions</Name>
         <Operations>CRWD</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>Reusable resource for current collection of actions</Description>
       </Item>
-      <Item>
+      <Item ID="5053">
         <ResourceID>5053</ResourceID>
         <Name>Current Action</Name>
         <Operations>R</Operations>
@@ -52,7 +52,7 @@
         <Units></Units>
         <Description>Index in Actions array of the current action</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

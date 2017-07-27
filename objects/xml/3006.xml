@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3006</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3006</ObjectURN>
     <Name>Controller</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Controller device such as a wall mounted switch</Description>
     <Resources>
-      <Item>
+      <Item ID="5011">
         <ResourceID>5011</ResourceID>
         <Name>OnOff Control</Name>
         <Operations>R</Operations>
@@ -19,7 +19,7 @@
         <Units></Units>
         <Description>The state of an OnOff control element, e.g. a user control</Description>
       </Item>
-      <Item>
+      <Item ID="5012">
         <ResourceID>5012</ResourceID>
         <Name>Level Control</Name>
         <Operations>R</Operations>
@@ -30,7 +30,7 @@
         <Units>ucum:%</Units>
         <Description>The setting of a level control element, e.g. a user control</Description>
       </Item>
-      <Item>
+      <Item ID="5013">
         <ResourceID>5013</ResourceID>
         <Name>Momentary Switch</Name>
         <Operations>R</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>The state of a momentary switch like a user push button</Description>
       </Item>
-      <Item>
+      <Item ID="5014">
         <ResourceID>5014</ResourceID>
         <Name>Up or Increment</Name>
         <Operations>R</Operations>
@@ -52,7 +52,7 @@
         <Units></Units>
         <Description>The state of a momentary switch that indicates an expected increase in value</Description>
       </Item>
-      <Item>
+      <Item ID="5015">
         <ResourceID>5015</ResourceID>
         <Name>Down or Decrement</Name>
         <Operations>R</Operations>
@@ -63,7 +63,7 @@
         <Units></Units>
         <Description>The state of a momentary switch that indicates an expected decrease in value</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

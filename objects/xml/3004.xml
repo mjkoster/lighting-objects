@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3004</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3004</ObjectURN>
     <Name>Color Temperature</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Color control using Color Temperature</Description>
     <Resources>
-      <Item>
+      <Item ID="5031">
         <ResourceID>5031</ResourceID>
         <Name>Current Color Temp</Name>
         <Operations>RW</Operations>
@@ -19,7 +19,7 @@
         <Units>ucum:k</Units>
         <Description>Current value of Color Temperature in degrees K for CT light control mode</Description>
       </Item>
-      <Item>
+      <Item ID="5052">
         <ResourceID>5052</ResourceID>
         <Name>Actions</Name>
         <Operations>CRWD</Operations>
@@ -30,7 +30,7 @@
         <Units></Units>
         <Description>Reusable resource for current collection of actions</Description>
       </Item>
-      <Item>
+      <Item ID="5053">
         <ResourceID>5053</ResourceID>
         <Name>Current Action</Name>
         <Operations>R</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>Index in Actions array of the current action</Description>
       </Item>
-      <Item>
+      <Item ID="5002">
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
         <Operations>RW</Operations>
@@ -52,7 +52,7 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-      <Item>
+      <Item ID="5003">
         <ResourceID>5003</ResourceID>
         <Name>Remaining Time</Name>
         <Operations>RW</Operations>
@@ -63,7 +63,7 @@
         <Units>ucum:%</Units>
         <Description>Time left to execute teh current Action</Description>
       </Item>
-      <Item>
+      <Item ID="5004">
         <ResourceID>5004</ResourceID>
         <Name>Stop</Name>
         <Operations>E</Operations>
@@ -74,7 +74,7 @@
         <Units></Units>
         <Description>Stop the currently executing Action</Description>
       </Item>
-      <Item>
+      <Item ID="5059">
         <ResourceID>5059</ResourceID>
         <Name>Change Color Temperature</Name>
         <Operations>E</Operations>
@@ -85,7 +85,7 @@
         <Units>ucum:degK</Units>
         <Description>Change Color Temperature Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5036">
         <ResourceID>5036</ResourceID>
         <Name>Move Color Temp</Name>
         <Operations>E</Operations>
@@ -96,7 +96,7 @@
         <Units></Units>
         <Description>Start Move Color Temp Operation at the given rate</Description>
       </Item>
-      <Item>
+      <Item ID="5041">
         <ResourceID>5041</ResourceID>
         <Name>Step Color Temp</Name>
         <Operations>E</Operations>
@@ -107,7 +107,7 @@
         <Units></Units>
         <Description>Start Step Color Temp Operation at the given rate</Description>
       </Item>
-      <Item>
+      <Item ID="5007">
         <ResourceID>5007</ResourceID>
         <Name>Step Time</Name>
         <Operations>RW</Operations>
@@ -118,7 +118,7 @@
         <Units>ucum:s</Units>
         <Description>Time to move Step amount</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

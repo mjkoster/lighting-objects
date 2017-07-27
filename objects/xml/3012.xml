@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3012</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3012</ObjectURN>
     <Name>Scene Control</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Scene Control Object</Description>
     <Resources>
-      <Item>
+      <Item ID="5075">
         <ResourceID>5075</ResourceID>
         <Name>Current Scene</Name>
         <Operations>R</Operations>
@@ -19,7 +19,7 @@
         <Units></Units>
         <Description>The most recently recalled Scene</Description>
       </Item>
-      <Item>
+      <Item ID="5076">
         <ResourceID>5076</ResourceID>
         <Name>Recall Scene</Name>
         <Operations>E</Operations>
@@ -30,7 +30,7 @@
         <Units></Units>
         <Description>Recall the indicated Scene</Description>
       </Item>
-      <Item>
+      <Item ID="5002">
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
         <Operations>RW</Operations>
@@ -41,7 +41,7 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-      <Item>
+      <Item ID="5073">
         <ResourceID>5073</ResourceID>
         <Name>Valid</Name>
         <Operations>R</Operations>
@@ -52,7 +52,7 @@
         <Units>ucum:%</Units>
         <Description>Indicates that the value obtained is the most current value, e.g. a scene state matches the state of all resources in the scene</Description>
       </Item>
-      <Item>
+      <Item ID="5077">
         <ResourceID>5077</ResourceID>
         <Name>Update Scene</Name>
         <Operations>E</Operations>
@@ -63,7 +63,7 @@
         <Units></Units>
         <Description>Update the current scene or the linked scene</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

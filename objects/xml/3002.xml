@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3002</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3002</ObjectURN>
     <Name>Color HS</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Color COntrol using the HS Color Space, to be used with Level control</Description>
     <Resources>
-      <Item>
+      <Item ID="5027">
         <ResourceID>5027</ResourceID>
         <Name>Current Hue</Name>
         <Operations>RW</Operations>
@@ -19,7 +19,7 @@
         <Units></Units>
         <Description>Current value of hue setting for HS light control mode</Description>
       </Item>
-      <Item>
+      <Item ID="5028">
         <ResourceID>5028</ResourceID>
         <Name>Current Saturation</Name>
         <Operations>RW</Operations>
@@ -30,7 +30,7 @@
         <Units>ucum:%</Units>
         <Description>Current value of saturation setting for HS light control mode</Description>
       </Item>
-      <Item>
+      <Item ID="5052">
         <ResourceID>5052</ResourceID>
         <Name>Actions</Name>
         <Operations>CRWD</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>Reusable resource for current collection of actions</Description>
       </Item>
-      <Item>
+      <Item ID="5053">
         <ResourceID>5053</ResourceID>
         <Name>Current Action</Name>
         <Operations>R</Operations>
@@ -52,7 +52,7 @@
         <Units></Units>
         <Description>Index in Actions array of the current action</Description>
       </Item>
-      <Item>
+      <Item ID="5002">
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
         <Operations>RW</Operations>
@@ -63,7 +63,7 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-      <Item>
+      <Item ID="5003">
         <ResourceID>5003</ResourceID>
         <Name>Remaining Time</Name>
         <Operations>RW</Operations>
@@ -74,7 +74,7 @@
         <Units>ucum:%</Units>
         <Description>Time left to execute teh current Action</Description>
       </Item>
-      <Item>
+      <Item ID="5004">
         <ResourceID>5004</ResourceID>
         <Name>Stop</Name>
         <Operations>E</Operations>
@@ -85,7 +85,7 @@
         <Units></Units>
         <Description>Stop the currently executing Action</Description>
       </Item>
-      <Item>
+      <Item ID="5055">
         <ResourceID>5055</ResourceID>
         <Name>Change Hue</Name>
         <Operations>E</Operations>
@@ -96,7 +96,7 @@
         <Units></Units>
         <Description>Change Hue Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5056">
         <ResourceID>5056</ResourceID>
         <Name>Change Saturation</Name>
         <Operations>E</Operations>
@@ -107,7 +107,7 @@
         <Units></Units>
         <Description>Change Saturation Setting</Description>
       </Item>
-      <Item>
+      <Item ID="5032">
         <ResourceID>5032</ResourceID>
         <Name>Move Hue</Name>
         <Operations>E</Operations>
@@ -118,7 +118,7 @@
         <Units></Units>
         <Description>Start Move Hue Operation at the given rate</Description>
       </Item>
-      <Item>
+      <Item ID="5033">
         <ResourceID>5033</ResourceID>
         <Name>Move Saturation</Name>
         <Operations>E</Operations>
@@ -129,7 +129,7 @@
         <Units></Units>
         <Description>Start Move Saturation Operation at the given rate</Description>
       </Item>
-      <Item>
+      <Item ID="5037">
         <ResourceID>5037</ResourceID>
         <Name>Step Hue</Name>
         <Operations>E</Operations>
@@ -140,7 +140,7 @@
         <Units></Units>
         <Description>Start Step Hue Operation at the given rate</Description>
       </Item>
-      <Item>
+      <Item ID="5038">
         <ResourceID>5038</ResourceID>
         <Name>Step Saturation</Name>
         <Operations>E</Operations>
@@ -151,7 +151,7 @@
         <Units></Units>
         <Description>Start Step Saturation Operation at the given rate</Description>
       </Item>
-      <Item>
+      <Item ID="5007">
         <ResourceID>5007</ResourceID>
         <Name>Step Time</Name>
         <Operations>RW</Operations>
@@ -162,7 +162,7 @@
         <Units>ucum:s</Units>
         <Description>Time to move Step amount</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>

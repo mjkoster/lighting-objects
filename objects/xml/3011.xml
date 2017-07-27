@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LWM2M>
-  <Object>
+<LWM2M xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://openmobilealliance.org/tech/profiles/LWM2M.xsd">
+  <Object ObjectType="MODefinition">
     <ObjectID>3011</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3011</ObjectURN>
     <Name>Scene</Name>
@@ -8,7 +8,7 @@
     <Mandatory>Optional</Mandatory>
     <Description>Scene Definition Object</Description>
     <Resources>
-      <Item>
+      <Item ID="5072">
         <ResourceID>5072</ResourceID>
         <Name>Name</Name>
         <Operations>RW</Operations>
@@ -19,7 +19,7 @@
         <Units>ucum:%</Units>
         <Description>Name of a scene or other item in a collection</Description>
       </Item>
-      <Item>
+      <Item ID="5002">
         <ResourceID>5002</ResourceID>
         <Name>Transition Time</Name>
         <Operations>RW</Operations>
@@ -30,7 +30,7 @@
         <Units>ucum:%</Units>
         <Description>Time to reach the new state or value</Description>
       </Item>
-      <Item>
+      <Item ID="5054">
         <ResourceID>5054</ResourceID>
         <Name>Instance List</Name>
         <Operations>CRWD</Operations>
@@ -41,7 +41,7 @@
         <Units></Units>
         <Description>Array of links to local object instances</Description>
       </Item>
-      <Item>
+      <Item ID="5074">
         <ResourceID>5074</ResourceID>
         <Name>Scene Configurtion</Name>
         <Operations>RW</Operations>
@@ -52,7 +52,7 @@
         <Units></Units>
         <Description>A SenML template for updating object instances as scene members</Description>
       </Item>
-      <Item>
+      <Item ID="5750">
         <ResourceID>5750</ResourceID>
         <Name>Application Type</Name>
         <Operations>R</Operations>
