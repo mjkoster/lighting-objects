@@ -1,2 +1,2 @@
 # lighting-objects
-Proposal for LWM2M-Compatible objects for ighting and control
+Proposal for LWM2M-Compatible objects for lighting and control
