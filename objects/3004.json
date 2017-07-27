@@ -2,37 +2,24 @@
 {
   "LWM2M" : {
     "Object" : {
-      "ObjectID": 3002,
-      "ObjectURN": "urn:oma:lwm2m:ext:3002",
-      "Name": "Color HS",
+      "ObjectID": 3003,
+      "ObjectURN": "urn:oma:lwm2m:ext:3003",
+      "Name": "Color XY",
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
-      "Description": "Color COntrol using the HS Color Space, to be used with Level control",
+      "Description": "Color control using the CIE XY Color Space",
       "Resources": [
         {
           "Item": {
-            "ResourceID": 5027,
-            "Name": "Current Hue",
-            "Operations": "RW",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Float",
-            "RangeEnumeration": "0-360",
-            "Units": "",
-            "Description": "Current value of hue setting for HS light control mode"
-          }
-        },
-        {
-          "Item": {
-            "ResourceID": 5028,
-            "Name": "Current Saturation",
+            "ResourceID": 5031,
+            "Name": "Current Color Temp",
             "Operations": "RW",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
-            "Units": "ucum:%",
-            "Description": "Current value of saturation setting for HS light control mode"
+            "Units": "ucum:k",
+            "Description": "Current value of Color Temperature in degrees K for CT light control mode"
           }
         },
         {
@@ -102,80 +89,41 @@
         },
         {
           "Item": {
-            "ResourceID": 5055,
-            "Name": "Change Hue",
+            "ResourceID": 5059,
+            "Name": "Change Color Temperature",
             "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
-            "Units": "",
-            "Description": "Change Hue Setting"
+            "Units": "ucum:degK",
+            "Description": "Change Color Temperature Setting"
           }
         },
         {
           "Item": {
-            "ResourceID": 5056,
-            "Name": "Change Saturation",
+            "ResourceID": 5036,
+            "Name": "Move Color Temp",
             "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "Change Saturation Setting"
+            "Description": "Start Move Color Temp Operation at the given rate"
           }
         },
         {
           "Item": {
-            "ResourceID": 5032,
-            "Name": "Move Hue",
+            "ResourceID": 5041,
+            "Name": "Step Color Temp",
             "Operations": "E",
             "MultipleInstances": "Single",
             "Mandatory": "Optional",
             "Type": "Float",
             "RangeEnumeration": "",
             "Units": "",
-            "Description": "Start Move Hue Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
-            "ResourceID": 5033,
-            "Name": "Move Saturation",
-            "Operations": "E",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Float",
-            "RangeEnumeration": "",
-            "Units": "",
-            "Description": "Start Move Saturation Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
-            "ResourceID": 5037,
-            "Name": "Step Hue",
-            "Operations": "E",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Float",
-            "RangeEnumeration": "",
-            "Units": "",
-            "Description": "Start Step Hue Operation at the given rate"
-          }
-        },
-        {
-          "Item": {
-            "ResourceID": 5038,
-            "Name": "Step Saturation",
-            "Operations": "E",
-            "MultipleInstances": "Single",
-            "Mandatory": "Optional",
-            "Type": "Float",
-            "RangeEnumeration": "",
-            "Units": "",
-            "Description": "Start Step Saturation Operation at the given rate"
+            "Description": "Start Step Color Temp Operation at the given rate"
           }
         },
         {
