@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3000</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3000</ObjectURN>
+    <Name>OnOff</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Sensor or Actuator for On/Off Control</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5850</ResourceID>
+        <Name>Current State</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Boolean</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The Curent State</Description>
+      </Item>
+      <Item>
+        <ResourceID>5000</ResourceID>
+        <Name>Toggle</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Opaque</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Current State := Current State XOR TRUE</Description>
+      </Item>
+      <Item>
+        <ResourceID>5052</ResourceID>
+        <Name>Actions</Name>
+        <Operations>CRWD</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration>JSON</RangeEnumeration>
+        <Units></Units>
+        <Description>Reusable resource for current collection of actions</Description>
+      </Item>
+      <Item>
+        <ResourceID>5053</ResourceID>
+        <Name>Current Action</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Integer</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Index in Actions array of the current action</Description>
+      </Item>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

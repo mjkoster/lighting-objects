@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3004</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3004</ObjectURN>
+    <Name>Color Temperature</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Color control using Color Temperature</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5031</ResourceID>
+        <Name>Current Color Temp</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:k</Units>
+        <Description>Current value of Color Temperature in degrees K for CT light control mode</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5052</ResourceID>
+        <Name>Actions</Name>
+        <Operations>CRWD</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration>JSON</RangeEnumeration>
+        <Units></Units>
+        <Description>Reusable resource for current collection of actions</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5053</ResourceID>
+        <Name>Current Action</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Integer</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Index in Actions array of the current action</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5002</ResourceID>
+        <Name>Transition Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Time to reach the new state or value</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5003</ResourceID>
+        <Name>Remaining Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Time left to execute teh current Action</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5004</ResourceID>
+        <Name>Stop</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Opaque</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Stop the currently executing Action</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5059</ResourceID>
+        <Name>Change Color Temperature</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:degK</Units>
+        <Description>Change Color Temperature Setting</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5036</ResourceID>
+        <Name>Move Color Temp</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Start Move Color Temp Operation at the given rate</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5041</ResourceID>
+        <Name>Step Color Temp</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Start Step Color Temp Operation at the given rate</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5007</ResourceID>
+        <Name>Step Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:s</Units>
+        <Description>Time to move Step amount</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

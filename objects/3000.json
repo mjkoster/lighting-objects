@@ -8,9 +8,9 @@
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Sensor or Actuator for On/Off Control",
-      "Resources": [
-        {
-          "Item": {
+      "Resources": {
+        "Item": [
+          {
             "ResourceID": 5850,
             "Name": "Current State",
             "Operations": "RW",
@@ -20,10 +20,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "The Curent State"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5000,
             "Name": "Toggle",
             "Operations": "E",
@@ -33,10 +31,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Current State := Current State XOR TRUE"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5052,
             "Name": "Actions",
             "Operations": "CRWD",
@@ -46,10 +42,8 @@
             "RangeEnumeration": "JSON",
             "Units": "",
             "Description": "Reusable resource for current collection of actions"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5053,
             "Name": "Current Action",
             "Operations": "R",
@@ -59,10 +53,8 @@
             "RangeEnumeration": "",
             "Units": "",
             "Description": "Index in Actions array of the current action"
-          }
-        },
-        {
-          "Item": {
+          },
+          {
             "ResourceID": 5750,
             "Name": "Application Type",
             "Operations": "R",
@@ -73,8 +65,8 @@
             "Units": "",
             "Description": "The application type or use context"
           }
-        }
-      ]
+        ]
+      }
     }
   }
 }

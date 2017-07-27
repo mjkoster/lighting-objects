@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3006</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3006</ObjectURN>
+    <Name>Controller</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Controller device such as a wall mounted switch</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5011</ResourceID>
+        <Name>OnOff Control</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Boolean</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The state of an OnOff control element, e.g. a user control</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5012</ResourceID>
+        <Name>Level Control</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>The setting of a level control element, e.g. a user control</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5013</ResourceID>
+        <Name>Momentary Switch</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Boolean</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The state of a momentary switch like a user push button</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5014</ResourceID>
+        <Name>Up or Increment</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Boolean</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The state of a momentary switch that indicates an expected increase in value</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5015</ResourceID>
+        <Name>Down or Decrement</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Boolean</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The state of a momentary switch that indicates an expected decrease in value</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

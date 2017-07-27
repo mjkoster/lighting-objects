@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3001</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3001</ObjectURN>
+    <Name>Level</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Sensor or Actuator for Proportional Level Control</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5001</ResourceID>
+        <Name>Current Level</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>The Current Level Value in % or units specified by Units resource</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5701</ResourceID>
+        <Name>Units</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Engineering Units</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5052</ResourceID>
+        <Name>Actions</Name>
+        <Operations>CRWD</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration>JSON</RangeEnumeration>
+        <Units></Units>
+        <Description>Reusable resource for current collection of actions</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5053</ResourceID>
+        <Name>Current Action</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Integer</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Index in Actions array of the current action</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5044</ResourceID>
+        <Name>Change Level</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Change Level Setting</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5002</ResourceID>
+        <Name>Transition Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Time to reach the new state or value</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5003</ResourceID>
+        <Name>Remaining Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Time left to execute teh current Action</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5004</ResourceID>
+        <Name>Stop</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Opaque</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Stop the currently executing Action</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5005</ResourceID>
+        <Name>Move</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%/ucum:s</Units>
+        <Description>Start Move operatoin at a given rate, % per second</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5006</ResourceID>
+        <Name>Step</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Start Step operation of a given size</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5007</ResourceID>
+        <Name>Step Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:s</Units>
+        <Description>Time to move Step amount</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5008</ResourceID>
+        <Name>OnOff Link</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Associated OnOff Actuator</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5009</ResourceID>
+        <Name>On Level</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Go to this level when OnOff is set to On</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5010</ResourceID>
+        <Name>OnOff Transition Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:s</Units>
+        <Description>Time to move OnOff state from off to on, or from on to off</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

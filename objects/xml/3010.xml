@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3010</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3010</ObjectURN>
+    <Name>Link Group</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Link Group for collective interaction with local objects</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5054</ResourceID>
+        <Name>Instance List</Name>
+        <Operations>CRWD</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Array of links to local object instances</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5079</ResourceID>
+        <Name>Instance group</Name>
+        <Operations>RWE</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Used to interact with all instances collectively</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3009</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3009</ObjectURN>
+    <Name>Network Group</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Network Group Object e.g. to map a multicast address</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5047</ResourceID>
+        <Name>Network Address</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>RFC3986 URI with shceme and authority</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5078</ResourceID>
+        <Name>Application Group</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Integer</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Identifier of a protocol-specific applicaiton group</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5048</ResourceID>
+        <Name>Short ID</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Integer</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Short ID for ACL reference</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5049</ResourceID>
+        <Name>Public Key</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Local Public Key used in Handshake</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5050</ResourceID>
+        <Name>Private Key</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Opaque</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Local Private Key used in verification and signing</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5051</ResourceID>
+        <Name>External Public Key</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Remote Public Key used in Handshake</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

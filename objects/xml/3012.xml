@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3012</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3012</ObjectURN>
+    <Name>Scene Control</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Scene Control Object</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5075</ResourceID>
+        <Name>Current Scene</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The most recently recalled Scene</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5076</ResourceID>
+        <Name>Recall Scene</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Recall the indicated Scene</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5002</ResourceID>
+        <Name>Transition Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Time to reach the new state or value</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5073</ResourceID>
+        <Name>Valid</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Boolean</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Indicates that the value obtained is the most current value, e.g. a scene state matches the state of all resources in the scene</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5077</ResourceID>
+        <Name>Update Scene</Name>
+        <Operations>E</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Update the current scene or the linked scene</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>

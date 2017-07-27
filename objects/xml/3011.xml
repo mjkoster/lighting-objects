@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LWM2M>
+  <Object>
+    <ObjectID>3011</ObjectID>
+    <ObjectURN>urn:oma:lwm2m:ext:3011</ObjectURN>
+    <Name>Scene</Name>
+    <MultipleInstances>Multiple</MultipleInstances>
+    <Mandatory>Optional</Mandatory>
+    <Description>Scene Definition Object</Description>
+    <Resources>
+      <Item>
+        <ResourceID>5072</ResourceID>
+        <Name>Name</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Name of a scene or other item in a collection</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5002</ResourceID>
+        <Name>Transition Time</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>Float</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units>ucum:%</Units>
+        <Description>Time to reach the new state or value</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5054</ResourceID>
+        <Name>Instance List</Name>
+        <Operations>CRWD</Operations>
+        <MultipleInstances>Multiple</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>Objlink</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>Array of links to local object instances</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5074</ResourceID>
+        <Name>Scene Configurtion</Name>
+        <Operations>RW</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Mandatory</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration>SenML</RangeEnumeration>
+        <Units></Units>
+        <Description>A SenML template for updating object instances as scene members</Description>
+      </Item>
+    </Resources>
+    <Resources>
+      <Item>
+        <ResourceID>5750</ResourceID>
+        <Name>Application Type</Name>
+        <Operations>R</Operations>
+        <MultipleInstances>Single</MultipleInstances>
+        <Mandatory>Optional</Mandatory>
+        <Type>String</Type>
+        <RangeEnumeration></RangeEnumeration>
+        <Units></Units>
+        <Description>The application type or use context</Description>
+      </Item>
+    </Resources>
+  </Object>
+</LWM2M>
