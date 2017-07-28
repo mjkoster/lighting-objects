@@ -3,7 +3,7 @@
   <Object ObjectType="MODefinition">
     <ObjectID>3007</ObjectID>
     <ObjectURN>urn:oma:lwm2m:ext:3007</ObjectURN>
-    <Name>Controller</Name>
+    <Name>Binding</Name>
     <MultipleInstances>Multiple</MultipleInstances>
     <Mandatory>Optional</Mandatory>
     <Description>Binding client action to resource state change</Description>

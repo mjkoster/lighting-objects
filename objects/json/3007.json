@@ -4,7 +4,7 @@
     "Object" : {
       "ObjectID": 3007,
       "ObjectURN": "urn:oma:lwm2m:ext:3007",
-      "Name": "Controller",
+      "Name": "Binding",
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
       "Description": "Binding client action to resource state change",
