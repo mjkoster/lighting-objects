@@ -7,7 +7,7 @@
       "Name": "Color HS",
       "MultipleInstances": "Multiple",
       "Mandatory": "Optional",
-      "Description": "Color COntrol using the HS Color Space, to be used with Level control",
+      "Description": "Color Control using the HS Color Space, to be used with Level control",
       "Resources": {
         "Item": [
           {

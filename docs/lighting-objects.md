@@ -1,15 +1,15 @@
-## Smart Object Definition 
+## Smart Object Definition
 ### 3000 - OnOff
 
-### Description: 
+### Description:
 Sensor or Actuator for On/Off Control
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3000|OnOff|urn:oma:lwm2m:ext:3000|Multiple|Sensor or Actuator for On/Off Control|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5850|Current State|Multiple|Mandatory|Boolean|||The Curent State|
@@ -18,18 +18,18 @@ Sensor or Actuator for On/Off Control
 |5053|Current Action|Multiple|Optional|Integer|||Index in Actions array of the current action|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3001 - Level
 
-### Description: 
+### Description:
 Sensor or Actuator for Proportional Level Control
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3001|Level|urn:oma:lwm2m:ext:3001|Multiple|Sensor or Actuator for Proportional Level Control|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5001|Current Level|Single|Mandatory|Float||ucum:%|The Current Level Value in % or units specified by Units resource|
@@ -48,18 +48,18 @@ Sensor or Actuator for Proportional Level Control
 |5010|OnOff Transition Time|Single|Optional|Float||ucum:s|Time to move OnOff state from off to on, or from on to off|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3002 - Color HS
 
-### Description: 
-Color COntrol using the HS Color Space, to be used with Level control
+### Description:
+Color Control using the HS Color Space, to be used with Level control
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
-|3002|Color HS|urn:oma:lwm2m:ext:3002|Multiple|Color COntrol using the HS Color Space, to be used with Level control|
+|3002|Color HS|urn:oma:lwm2m:ext:3002|Multiple|Color Control using the HS Color Space, to be used with Level control|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5027|Current Hue|Single|Mandatory|Float|0-360||Current value of hue setting for HS light control mode|
@@ -78,18 +78,18 @@ Color COntrol using the HS Color Space, to be used with Level control
 |5007|Step Time|Single|Optional|Float||ucum:s|Time to move Step amount|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3003 - Color XY
 
-### Description: 
+### Description:
 Color control using the CIE XY Color Space
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3003|Color XY|urn:oma:lwm2m:ext:3003|Multiple|Color control using the CIE XY Color Space|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5029|Current X|Single|Mandatory|Float|||Current value of X setting for XY light control mode|
@@ -108,18 +108,18 @@ Color control using the CIE XY Color Space
 |5007|Step Time|Single|Optional|Float||ucum:s|Time to move Step amount|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3004 - Color Temperature
 
-### Description: 
+### Description:
 Color control using Color Temperature
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3004|Color Temperature|urn:oma:lwm2m:ext:3004|Multiple|Color control using Color Temperature|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5031|Current Color Temp|Single|Mandatory|Float||ucum:k|Current value of Color Temperature in degrees K for CT light control mode|
@@ -134,18 +134,18 @@ Color control using Color Temperature
 |5007|Step Time|Single|Optional|Float||ucum:s|Time to move Step amount|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3005 - Color RGB
 
-### Description: 
+### Description:
 Color control using the RGB Color Space
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3005|Color RGB|urn:oma:lwm2m:ext:3005|Multiple|Color control using the RGB Color Space|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5060|Current Red|Single|Mandatory|Float|||Current Red Setting|
@@ -168,18 +168,18 @@ Color control using the RGB Color Space
 |5007|Step Time|Single|Optional|Float||ucum:s|Time to move Step amount|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3006 - Controller
 
-### Description: 
+### Description:
 Controller device such as a wall mounted switch
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3006|Controller|urn:oma:lwm2m:ext:3006|Multiple|Controller device such as a wall mounted switch|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5011|OnOff Control|Multiple|Optional|Boolean|||The state of an OnOff control element, e.g. a user control|
@@ -189,18 +189,18 @@ Controller device such as a wall mounted switch
 |5015|Down or Decrement|Multiple|Optional|Boolean|||The state of a momentary switch that indicates an expected decrease in value|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3007 - Binding
 
-### Description: 
+### Description:
 Binding client action to resource state change
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3007|Binding|urn:oma:lwm2m:ext:3007|Multiple|Binding client action to resource state change|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5016|Object Instance|Single|Mandatory|Objlink|||An Object Link to the Containing Object Instance|
@@ -220,18 +220,18 @@ Binding client action to resource state change
 |5043|SV|Single|Optional|Float|regex||String report filter|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3008 - Peer
 
-### Description: 
+### Description:
 Network Peer Object
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3008|Peer|urn:oma:lwm2m:ext:3008|Multiple|Network Peer Object|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5047|Network Address|Single|Mandatory|String|||RFC3986 URI with shceme and authority|
@@ -241,18 +241,18 @@ Network Peer Object
 |5051|External Public Key|Single|Optional|String|||Remote Public Key used in Handshake|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3009 - Network Group
 
-### Description: 
+### Description:
 Network Group Object e.g. to map a multicast address
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3009|Network Group|urn:oma:lwm2m:ext:3009|Multiple|Network Group Object e.g. to map a multicast address|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5047|Network Address|Single|Mandatory|String|||RFC3986 URI with shceme and authority|
@@ -263,36 +263,36 @@ Network Group Object e.g. to map a multicast address
 |5051|External Public Key|Single|Optional|String|||Remote Public Key used in Handshake|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3010 - Link Group
 
-### Description: 
+### Description:
 Link Group for collective interaction with local objects
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3010|Link Group|urn:oma:lwm2m:ext:3010|Multiple|Link Group for collective interaction with local objects|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5054|Instance List|Multiple|Mandatory|Objlink|||Array of links to local object instances|
 |5079|Instance group|Multiple|Mandatory|Objlink|||Used to interact with all instances collectively|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3011 - Scene
 
-### Description: 
+### Description:
 Scene Definition Object
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3011|Scene|urn:oma:lwm2m:ext:3011|Multiple|Scene Definition Object|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5072|Name|Single|Optional|String||ucum:%|Name of a scene or other item in a collection|
@@ -301,18 +301,18 @@ Scene Definition Object
 |5074|Scene Configurtion|Single|Mandatory|String|SenML||A SenML template for updating object instances as scene members|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Smart Object Definition 
+## Smart Object Definition
 ### 3012 - Scene Control
 
-### Description: 
+### Description:
 Scene Control Object
 
-### Object Information: 
+### Object Information:
 |ObjectID|Name|ObjectURN|MultipleInstances|Description|
 |----|----|----|----|----|
 |3012|Scene Control|urn:oma:lwm2m:ext:3012|Multiple|Scene Control Object|
 
-### Resouces 
+### Resouces
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5075|Current Scene|Single|Mandatory|Objlink|||The most recently recalled Scene|
@@ -322,7 +322,7 @@ Scene Control Object
 |5077|Update Scene|Single|Optional|Objlink|||Update the current scene or the linked scene|
 |5750|Application Type|Single|Optional|String|||The application type or use context|
 
-## Resouce Definitions 
+## Resouce Definitions
 |ResourceID|Name|MultipleInstances|Mandatory|Type|RangeEnumeration|Units|Description|
 |----|----|----|----|----|----|----|----|
 |5000|Toggle|Single|Optional|Opaque|||Current State := Current State XOR TRUE|
@@ -405,5 +405,3 @@ Scene Control Object
 |5077|Update Scene|Single|Optional|Objlink|||Update the current scene or the linked scene|
 |5078|Application Group|Single|Optional|Integer|||Identifier of a protocol-specific applicaiton group|
 |5079|Instance group|Multiple|Optional|Objlink|||Used to interact with all instances collectively|
-
-

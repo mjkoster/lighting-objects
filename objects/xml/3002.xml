@@ -6,7 +6,7 @@
     <Name>Color HS</Name>
     <MultipleInstances>Multiple</MultipleInstances>
     <Mandatory>Optional</Mandatory>
-    <Description>Color COntrol using the HS Color Space, to be used with Level control</Description>
+    <Description>Color Control using the HS Color Space, to be used with Level control</Description>
     <Resources>
       <Item ID="5027">
         <ResourceID>5027</ResourceID>
